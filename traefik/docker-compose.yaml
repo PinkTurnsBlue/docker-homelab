@@ -3,7 +3,7 @@ version: '3.3'
 
 services:
   traefik:
-    image: traefik:latest
+    image: traefik:1.7.6
     container_name: traefik
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -23,3 +23,4 @@ networks:
       name: traefik_proxy
   default:
     driver: bridge
+    
